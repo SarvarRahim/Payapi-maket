@@ -1,5 +1,43 @@
 :root {
+  --dark-pink: #BA4270;
+  --light-white: #fbfcfe;
+  --juan-blue: #36536B;
+  --mirage-blue: #1B262F;
+  --charm-pink: #DA6D97;
+  --light-juan-blue: #6C8294;
+  --color-body: #EDF3F8;
+  --font-stack: 'DM Serif Display', 'Arial', sans-serif;
+  --font-text: 'Public Sans', 'Arial', sans-serif;
 }
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+      url('../fonts/PublicSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../fonts/PublicSans-Bold.woff2') format('woff2'),
+      url('../fonts/PublicSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('../fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/DMSerifDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 /* GENERAL */
 html {
@@ -20,8 +58,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: var(--font-text);
+  background-color: var(--color-body);
+  overflow-x: hidden;
 }
 
 img {
@@ -43,9 +82,205 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* SITE HEADER  */
+.site-header {
+  padding-top: 40px;
+}
+
+.site-header::after {
+  position: absolute;
+  z-index: 2;
+  top: -550px;
+  left: -200px;
+  content: "";
+  width: 780px;
+  height: 800px;
+  background-image: url("../img/site-hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__link {
+  text-decoration: none;
+}
+
+.site-header__nav {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  border: 0;
+  width: 28px;
+  height: 17px;
+  background-image: url("../img/site-head-logp-burger.svg");
+  background-repeat: no-repeat;
+}
+
+/* NAVIGATION  */
+
+.sitenav {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  transform: translateX(100%);
+  text-align: center;
+  overflow: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--mirage-blue);
+  transition: transform 0.6s ease;
+}
+
+.sitenav--acitve {
+  display: block;
+}
+
+.sitenav--acitve {
+  transform: initial;
+}
+
+
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 86px;
+}
+
+.sitenav__list::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-white);
+  opacity: 0.15;
+  margin-bottom: 43px;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  opacity: 0.7;
+  color: var(--light-white);
+}
+
+.sitenav__link--btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  background-color: var(--dark-pink);
+  padding: 15px 38px;
+  border-radius: 24px;
+}
+
+/* SITE -HERO  */
+.hero::before {
+  position: absolute;
+  z-index: 3;
+  top: 75px;
+  left: 75px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-phone-mobile-version.png");
+  background-repeat: no-repeat;
+}
+
+.hero {
+  padding-top: 320px;
+}
+
+.hero__head {
+  margin: 0;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: var(--juan-blue);
+  font-family: var(--font-stack);
+  text-align: center;
+}
+
+/* FORM  */
+.form__group {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-mail {
+  width: 327px;
+  padding: 15px 150px 15px 26px;
+  border: 0;
+  background-color: var(--light-white);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  margin-top: 24px;
+}
+
+::placeholder {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  opacity: 0.5;
+}
+
+.form-btn {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: var(--light-white);
+  border: 0;
+  background-color: var(--dark-pink);
+  padding: 15px 100px;
+  border-radius: 24px;
+  margin-top: 16px;
+  white-space: nowrap;
+}
+
+.form__desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.form__desc__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--light-juan-blue);
 }
