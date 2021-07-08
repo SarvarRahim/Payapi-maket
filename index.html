@@ -29,10 +29,10 @@
             <li class="sitenav__item">
               <a class="sitenav__link" href="#">Contact</a>
             </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link--btn" href="#">Schedule a Demo</a>
-            </li>
           </ul>
+          <div class="sitenav-link__box">
+          <a class="sitenav__link--btn" href="#">Schedule a Demo</a>
+        </div>
         </nav>
       </div>
     </div>
@@ -40,15 +40,138 @@
 
   <div class="hero">
     <div class="hero-container container">
+      <div class="hero-content">
     <h1 class="hero__head">Start building with our APIs for absolutely free.</h1>
     <form action="https://echo.htmlacademy.ru" class="form__group">
+      <div class="form__wrapper">
     <input class="input-mail" type="email" name="email" aria-label="create for email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter email address">
     <button class="form-btn" type="submit">Schedule a Demo</button>
-
+  </div>
     <p class="form__desc">Have any questions? <a class="form__desc__link" href="contact.html">Contact Us</a></p>
     </form>
   </div>
   </div>
+  </div>
+
+  <section class="work">
+    <div class="work-container container">
+      <ul class="work__list">
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-tesla.svg" alt="logo tesla" width="107" height="15">
+        </li>
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-microsoft.svg" alt="logo microsoft" width="120" height="26">
+        </li>
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-hp.svg" alt="logo hawlett packard" width="115" height="22">
+        </li>
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-oracle.svg" alt="logo oracle" width="108" height="14">
+        </li>
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-google.svg" alt="logo google" width="80" height="28">
+        </li>
+        <li class="work__item">
+          <img class="work-patner__img" src="img/logo-invidia.svg" alt="logo nvidia" width="113" height="22">
+        </li>
+      </ul>
+
+      <div class="work__info">
+        <h2 class="work__title">Who we work with</h2>
+        <p class="work__desc">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.</p>
+        <a class="work__link" href="about.html">About us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="visually-hidden">Features company</h2>
+
+      <ol class="features__list">
+        <li class="features__item">
+          <img class="features__img" src="img/codepen.png" alt="Code API" width="328" height="210">
+          <div class="features-content">
+            <h3 class="features-content__title">Easy to implement</h3>
+            <p class="features-content__text">Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
+          </div>
+        </li>
+
+        <li class="features__item">
+          <img class="features__img features__img--simple" src="img/phone-simple-double.png" alt="Phone with UI/UX" width="328" height="290">
+          <div class="features-content features-content--simple">
+            <h3 class="features-content__title">Simple UI & UX</h3>
+            <p class="features-content__text">Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. </p>
+          </div>
+        </li>
+      </ol>
+
+      <ul class="finance__list">
+        <li class="finance__item">
+          <h4 class="finance__head">Personal Finances</h4>
+          <p class="finance__info">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account.</p>
+        </li>
+        <li class="finance__item finance__item--banking">
+          <h4 class="finance__head">Banking & Coverage</h4>
+          <p class="finance__info">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
+        </li>
+        <li class="finance__item finance__item--payment">
+          <h4 class="finance__head">Consumer Payments</h4>
+          <p class="finance__info">It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
+        </li>
+      </ul>
+
+      <div class="regestration">
+        <h3 class="regestration__title">Ready to start?</h3>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="regestration-form">
+          <div class="regestration__inner">
+            <input class="regestration__input" type="email" name="email" aria-label="create for email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter email address">
+          <button class="regestration__btn" type="submit">Schedule a Demo</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__content">
+        <a class="site-footer__img__link" href="index.html">
+          <img class="site-footer__img-dark" src="img/logo-payapi-dark.svg" alt="logo site dark" width="135" height="38">
+        </a>
+
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="about.html">About</a>
+          </li>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="site-footer-icon__list social-link">
+          <li class="social-link__item">
+            <a class="social-link__icon" href="facebook.com">
+              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.889 0H1.11A1.111 1.111 0 000 1.111V18.89A1.111 1.111 0 001.111 20h9.572v-7.733H8.086V9.239h2.597V7.017c0-2.584 1.578-3.991 3.89-3.991.776-.003 1.554.037 2.327.118v2.69h-1.594c-1.254 0-1.498.597-1.498 1.472v1.927h2.996l-.388 3.028h-2.61V20h5.083A1.111 1.111 0 0020 18.889V1.11A1.111 1.111 0 0018.889 0z" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li class="social-link__item">
+            <a class="social-link__icon" href="facebook.com">
+              <svg width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.111 4.111 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.353 8.353 0 002.048-2.125z" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li class="social-link__item">
+            <a class="social-link__icon" href="facebook.com">
+              <svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 0h16c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V2c0-1.1.9-2 2-2zm4 17V8H7v9h3zM8.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM18 17h3v-5.7c0-1.9-1.6-3.5-3.5-3.5-.9 0-2 .6-2.5 1.4V8h-3v9h3v-5.3c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5V17z" fill="currentColor"/></g><defs><filter id="filter0_d" x="0" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
